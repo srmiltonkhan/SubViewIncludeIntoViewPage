@@ -1,0 +1,12 @@
+@include('subview.Footer')
+
+
+@includeif('subview.Footer',['FooterKeyText'=>'All Ritht Revered']) 
+
+@includeFirst(['subview.Menu','subview.Footer']) // Jeta Aga View Asa Seta Shudo Asba 
+
+
+@includeWhen(false, 'subview.Menu')
+
+
+@includeUnless(true, 'subview.Menu')
